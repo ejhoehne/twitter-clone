@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="styles.css" type="text/css" />
+		
 	</head>
 	<body>
 		<div class="page-container">
@@ -12,7 +13,7 @@
 					</div>
 				</div>
 				<div class="tweet-content">
-					<textarea class="tweet-compose" placeholder="Compose new Tweet..."/></textarea>
+					<input id= "tweet-left" class="tweet-compose" maxlength= "140" value= ""placeholder="Compose new Tweet..."/></input>
 					<div class="tweet-controls">
 						<div class="char-count">140</div>
 						<button>Tweet</button>
@@ -57,7 +58,7 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="https://si0.twimg.com/profile_images/1482831577/vendetta_headshot.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+								<input class="tweet-compose" placeholder="Reply to @mybff"/></input>
 							</div>
 						</div>
 					</div>
@@ -96,7 +97,7 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="https://si0.twimg.com/profile_images/1482831577/vendetta_headshot.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+								<input class="tweet-compose" placeholder="Reply to @mybff"/></input>
 							</div>
 						</div>
 					</div>
@@ -135,12 +136,15 @@
 							</div>
 							<div class="reply">
 								<img class="avatar" src="https://si0.twimg.com/profile_images/1482831577/vendetta_headshot.jpg" />
-								<textarea class="tweet-compose" placeholder="Reply to @mybff"/></textarea>
+								<input class="tweet-compose" placeholder="Reply to @mybff"/></input>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	<script type= "text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type= "text/javascript" src="styles.js"></script>
+   
 	</body>
 </html>

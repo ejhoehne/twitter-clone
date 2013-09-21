@@ -55,8 +55,8 @@ body {
 	padding-top: 0;
 }
 
-textarea.tweet-compose {
-	width: 100%;
+input.tweet-compose {
+	width: 275px;
 	height: 2.5em;
 	font-size: 13px;
 	padding: 5px;
@@ -65,8 +65,31 @@ textarea.tweet-compose {
 	margin-bottom: 1em;
 }
 
+#tweet-left {
+	width: 275px;
+	height: 2.5em;
+	font-size: 13px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 1em;
+
+}
+input #tweet-left {
+	width: 275px;
+	height: 2.5em;
+	font-size: 13px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 1em;
+
+}
+
+
 .tweet-controls {
 	text-align: right;
+	visibility: hidden; 
 }
 
 .tweet-controls div {
