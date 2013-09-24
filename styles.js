@@ -51,9 +51,11 @@ $(function() {
 	});
 
 $(".tweet-controls button").click(function(){
-	var tweetText= $(".tweet-compose").val('');
+	var tweetText= $("#tweet-left .tweet-compose").val();
 	// $( "tweetText" ).clone(".tweet");
-	$(".stream .tweet:first-child").clone(".tweet").prependTo(".stream"); 
+	var newTweetText= $(".stream .tweet:first-child").clone(".tweet").prependTo(".stream"); 
+	newTweetText.find(".tweet-text").text(tweetText);
+
 }); 
 
     });
