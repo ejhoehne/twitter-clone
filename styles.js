@@ -7,6 +7,14 @@ $(function() {
     	$('.tweet-controls').css({
     		"visibility": "visible",
     	});
+   	$('#tweet-left').blur(function(e) {
+   			$('#tweet-left').css ({
+   				"height":"53px", 
+   			});
+   			$('tweet-controls').css ({
+   				"visibility": "hidden",
+   			});
+   	})
     	
 		var supportOnInput = 'oninput' in document.createElement('input.tweet-compose');
 
@@ -41,9 +49,12 @@ $(function() {
  });
  });
 	});
+
 $(".tweet-controls button").click(function(){
-  $(".tweet-compose").insertBefore(".tweet .content .avatar");
-});
-   
+	var tweetText= $(".tweet-compose").val('');
+	// $( "tweetText" ).clone(".tweet");
+	$(".stream .tweet:first-child").clone(".tweet").prependTo(".stream"); 
+}); 
+
     });
 
