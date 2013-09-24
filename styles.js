@@ -51,12 +51,14 @@ $(function() {
 	});
 
 $(".tweet-controls button").click(function(){
-	var tweetText= $("#tweet-left.tweet-compose").val();
+	var newTweetElement= $("#tweet-left.tweet-compose").val();
 	$("#tweet-left.tweet-compose").val("");
-	var newTweetText= $(".stream .tweet:first-child").clone(".tweet").prependTo(".stream"); 
-	newTweetText.find(".tweet-text").text(tweetText);
-	var newProfilePic= $("#avatar:first-child").val();
-	newProfilePic.find("#avatar").attr("src", "vendetta_headshot.png");
+	var newTweetElement= $(".stream .tweet:first-child").clone(".tweet").prependTo(".stream"); 
+	newTweetElement.find(".tweet-text").text(newTweetElement);
+	var newProfileSrc = $(".dashboard .avatar").attr("src");
+	newTweetElement.find(".avatar").attr(newProfileSrc);
+
+
 
 }); 
 
